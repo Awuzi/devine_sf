@@ -16,7 +16,7 @@ class CodeController extends AbstractController {
 
 
     public function index($histo = null) {
-
+/*
         $i = rand(0, 30);
 
         $devine = new Devine($i, array(...));
@@ -39,7 +39,7 @@ class CodeController extends AbstractController {
         }
         if ($iChoixJoueur >= 0 && $iChoixJoueur < strlen($histo)) {
             $histo[$iChoixJoueur] = 'x';
-        }
+        }*/
 
         return $this->render('code/index.html.twig', ['aTrouve' => $i, 'histo' => $histo]);
     }

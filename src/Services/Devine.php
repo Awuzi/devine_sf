@@ -35,15 +35,13 @@ class Devine
         if ($this->tentatives != $this->numeroADeviner) {
             $this->tentatives .= $this->tentatives;
         }
+
         return true;
     }
 
-    public function isWinner($tentatives)
-    {/*
-        if ($this->tentatives == $this->numeroADeviner) {
-            echo "Vous avez gagné";
-        }*/
-        return $tentatives == $this->numeroADeviner;
+    public function isWinner()
+    {
+        return $this->tentatives == $this->numeroADeviner;
     }
 
 
@@ -71,9 +69,9 @@ class Devine
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getTentatives(): array
+    public function getTentatives(): int
     {
         return $this->tentatives;
     }

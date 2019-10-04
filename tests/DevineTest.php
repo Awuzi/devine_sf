@@ -10,7 +10,7 @@ class DevineTest extends TestCase
         $numeroADeviner = 4;
         $tentative = 4;
         $d = new Devine($numeroADeviner, $tentative);
-        $this->assertEquals($numeroADeviner, $d->isWinner($tentative));
+        $this->assertEquals($numeroADeviner, $d->isWinner());
     }
 
 
